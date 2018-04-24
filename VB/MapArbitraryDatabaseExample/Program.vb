@@ -43,7 +43,7 @@ Namespace MapArbitraryDatabaseExample
        Dim primaryColumnType As DBColumnType = table.GetColumn(table.PrimaryKey.Columns(0)).ColumnType
        classInfo.CreateMember(table.PrimaryKey.Columns(0), DBColumn.GetType(primaryColumnType), New KeyAttribute(IsAutoGenerationSupported(primaryColumnType)))
        For Each col As DBColumn In table.Columns
-           If (Not col.IsKey) AndAlso col.ColumnType <> DBColumnType.Unknown Then
+           If Not col.IsKey AndAlso col.ColumnType <> DBColumnType.Unknown Then
                classInfo.CreateMember(col.Name, DBColumn.GetType(col.ColumnType))
            End If
        Next col
@@ -51,7 +51,7 @@ Namespace MapArbitraryDatabaseExample
     End Function
 
         Private Shared Function IsAutoGenerationSupported(ByVal type As DBColumnType) As Boolean
-            Return type = DBColumnType.Guid OrElse type = DBColumnType.Int16 OrElse type = DBColumnType.Int32
+            Return type Is DBColumnType.Guid OrElse type Is DBColumnType.Int16 OrElse type Is DBColumnType.Int32
         End Function
     End Class
 End Namespace

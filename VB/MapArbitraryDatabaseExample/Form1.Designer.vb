@@ -28,11 +28,11 @@
             Me.gridView1 = New DevExpress.XtraGrid.Views.Grid.GridView()
             Me.gridControl2 = New DevExpress.XtraGrid.GridControl()
             Me.gridView2 = New DevExpress.XtraGrid.Views.Grid.GridView()
-            DirectCast(Me.session1, System.ComponentModel.ISupportInitialize).BeginInit()
-            DirectCast(Me.gridControl1, System.ComponentModel.ISupportInitialize).BeginInit()
-            DirectCast(Me.gridView1, System.ComponentModel.ISupportInitialize).BeginInit()
-            DirectCast(Me.gridControl2, System.ComponentModel.ISupportInitialize).BeginInit()
-            DirectCast(Me.gridView2, System.ComponentModel.ISupportInitialize).BeginInit()
+            CType(Me.session1, System.ComponentModel.ISupportInitialize).BeginInit()
+            CType(Me.gridControl1, System.ComponentModel.ISupportInitialize).BeginInit()
+            CType(Me.gridView1, System.ComponentModel.ISupportInitialize).BeginInit()
+            CType(Me.gridControl2, System.ComponentModel.ISupportInitialize).BeginInit()
+            CType(Me.gridView2, System.ComponentModel.ISupportInitialize).BeginInit()
             Me.SuspendLayout()
             ' 
             ' gridControl1
@@ -73,11 +73,11 @@
             Me.Controls.Add(Me.gridControl1)
             Me.Name = "Form1"
             Me.Text = "Form1"
-            DirectCast(Me.session1, System.ComponentModel.ISupportInitialize).EndInit()
-            DirectCast(Me.gridControl1, System.ComponentModel.ISupportInitialize).EndInit()
-            DirectCast(Me.gridView1, System.ComponentModel.ISupportInitialize).EndInit()
-            DirectCast(Me.gridControl2, System.ComponentModel.ISupportInitialize).EndInit()
-            DirectCast(Me.gridView2, System.ComponentModel.ISupportInitialize).EndInit()
+            CType(Me.session1, System.ComponentModel.ISupportInitialize).EndInit()
+            CType(Me.gridControl1, System.ComponentModel.ISupportInitialize).EndInit()
+            CType(Me.gridView1, System.ComponentModel.ISupportInitialize).EndInit()
+            CType(Me.gridControl2, System.ComponentModel.ISupportInitialize).EndInit()
+            CType(Me.gridView2, System.ComponentModel.ISupportInitialize).EndInit()
             Me.ResumeLayout(False)
 
         End Sub

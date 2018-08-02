@@ -40,7 +40,7 @@ Dim memberInfo As XPMemberInfo = classInfo.CreateMember("MyProperty", GetType(St
 
 The ConnectionProviderSql class provides two methods that can be used to retrieve the database schema. The ConnectionProviderSql.GetStorageTablesList method returns an array of string values, representing table names in the database. The table names can be passed as parameters to the ConnectionProviderSql.GetStorageTables method, which will return an array of DBTable instances, describing the schema of specified tables. Here is the code of the method that creates persistent metadata based on a DBTable instance:
 
-```chaarp
+```csharp
 public static XPClassInfo AddClass(XPDictionary dict, DBTable table) {
    if (table.PrimaryKey.Columns.Count > 1) 
        throw new NotSupportedException("Compound primary keys are not supported");

@@ -96,6 +96,7 @@ Dim classInfo As XPClassInfo = session1.GetClassInfo(String.Empty, "Categories")
 gridControl1.DataSource = New XPCollection(session1, classInfo)
 ```
 **See Also:**
+
 [How to create an XPClassInfo descendant to dynamically build a persistent class structure](https://github.com/DevExpress-Examples/how-to-create-an-xpclassinfo-descendant-to-dynamically-build-a-persistent-class-structure-e1729)
 [How to generate persistent classes at runtime based on a dataset](https://github.com/DevExpress-Examples/how-to-generate-persistent-classes-at-runtime-based-on-a-dataset-e1198)
 [How to create collection properties with associations at runtime](https://github.com/DevExpress-Examples/how-to-create-collection-properties-with-associations-at-runtime-e5139)

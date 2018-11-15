@@ -1,3 +1,10 @@
+<!-- default file list -->
+*Files to look at*:
+
+* [Form1.cs](./CS/MapArbitraryDatabaseExample/Form1.cs) (VB: [Form1.vb](./VB/MapArbitraryDatabaseExample/Form1.vb))
+* [PersistentClasses.cs](./CS/MapArbitraryDatabaseExample/PersistentClasses.cs) (VB: [PersistentClasses.vb](./VB/MapArbitraryDatabaseExample/PersistentClasses.vb))
+* [Program.cs](./CS/MapArbitraryDatabaseExample/Program.cs) (VB: [Program.vb](./VB/MapArbitraryDatabaseExample/Program.vb))
+<!-- default file list end -->
 # How to Generate persistent metadata for an arbitrary data table
 
 For this task, XPO provides the capability to define persistent classes on the fly, without defining any classes in code, except for the class that will be used as the base class for dynamically created metadata. This class should provide a constructor with the XPClassInfo parameter. The code below is quite enough for this:

@@ -94,12 +94,12 @@ The implementation of the method is quite simple. The method simply iterates thr
 XPDictionary can be passed as a parameter to the constructors of the [SimpleDataLayer](https://documentation.devexpress.com/CoreLibraries/DevExpress.Xpo.SimpleDataLayer.class) and [ThreadSafeDataLayer](https://documentation.devexpress.com/CoreLibraries/DevExpress.Xpo.ThreadSafeDataLayer.class) classes.
 
 ```csharp
-XPClassInfo classInfo = session1.GetClassInfo(string.Empty, "Categories");
+XPClassInfo classInfo = session1.GetClassInfo(string.Empty, "Category");
 gridControl1.DataSource = new XPCollection(session1, classInfo);
 ```
 
 ```vbnet
-Dim classInfo As XPClassInfo = session1.GetClassInfo(String.Empty, "Categories")
+Dim classInfo As XPClassInfo = session1.GetClassInfo(String.Empty, "Category")
 gridControl1.DataSource = New XPCollection(session1, classInfo)
 ```
 **See Also:**   

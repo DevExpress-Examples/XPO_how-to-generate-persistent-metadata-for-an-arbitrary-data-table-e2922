@@ -5,7 +5,7 @@ using DevExpress.Xpo.DB;
 using System.Windows.Forms;
 using DevExpress.Xpo.Metadata;
 using DXSample;
-using System.Data.OleDb;
+using System.Data.SQLite;
 
 namespace MapArbitraryDatabaseExample {
     static class Program {
@@ -16,7 +16,8 @@ namespace MapArbitraryDatabaseExample {
         static void Main() {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            using (IDbConnection connection = new OleDbConnection(@"Provider=Microsoft.Jet.OLEDB.4.0;Data Source=..\..\nwind.mdb")) {
+            string connectionString = SQLiteConnectionProvider.GetConnectionString(@"nwind.sqlite");
+            using (IDbConnection connection = new SQLiteConnection(connectionString)) {
                 InitializeDataLayer(connection);
                 Application.Run(new Form1());
             }
@@ -25,7 +26,7 @@ namespace MapArbitraryDatabaseExample {
         static void InitializeDataLayer(IDbConnection connection) {
             ConnectionProviderSql prov = (ConnectionProviderSql)XpoDefault.GetConnectionProvider(connection, AutoCreateOption.None);
             XPDictionary dict = new ReflectionDictionary();
-            DBTable[] tables = prov.GetStorageTables("Categories");
+            DBTable[] tables = prov.GetStorageTables("Category");
             AddClass(dict, tables[0]);
             XpoDefault.DataLayer = new SimpleDataLayer(dict, prov);
         }

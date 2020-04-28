@@ -12,13 +12,13 @@ namespace MapArbitraryDatabaseExample {
         }
 
         void BindCategories() {
-            gridControl1.DataSource = new XPCollection(session1, session1.GetClassInfo(string.Empty, "Categories"));
+            gridControl1.DataSource = new XPCollection(session1, session1.GetClassInfo(string.Empty, "Category"));
         }
 
         void BindProducts() {
             SimpleDataLayer dataLayer = (SimpleDataLayer)session1.DataLayer;
             ConnectionProviderSql provider = (ConnectionProviderSql)dataLayer.ConnectionProvider;
-            DBTable[] tables = provider.GetStorageTables("Products");
+            DBTable[] tables = provider.GetStorageTables("Product");
             gridControl2.DataSource = new XPCollection(session1, Program.AddClass(session1.Dictionary, tables[0]));
         }
     }

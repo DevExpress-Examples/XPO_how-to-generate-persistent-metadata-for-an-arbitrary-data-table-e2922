@@ -1,11 +1,9 @@
-﻿<Project Sdk="Microsoft.NET.Sdk.WindowsDesktop">
-
+<Project Sdk="Microsoft.NET.Sdk.WindowsDesktop">
   <PropertyGroup>
     <OutputType>WinExe</OutputType>
     <TargetFramework>netcoreapp3.1</TargetFramework>
     <UseWindowsForms>true</UseWindowsForms>
   </PropertyGroup>
-
   <ItemGroup>
     <Compile Include="..\MapArbitraryDatabaseExample\Form1.cs" Link="Form1.cs" />
     <Compile Include="..\MapArbitraryDatabaseExample\Form1.Designer.cs" Link="Form1.Designer.cs" />
@@ -14,12 +12,10 @@
     <Compile Include="..\MapArbitraryDatabaseExample\Properties\Resources.Designer.cs" Link="Resources.Designer.cs" />
     <Compile Include="..\MapArbitraryDatabaseExample\Properties\Settings.Designer.cs" Link="Settings.Designer.cs" />
   </ItemGroup>
-
   <ItemGroup>
     <EmbeddedResource Include="..\MapArbitraryDatabaseExample\Form1.resx" Link="Form1.resx" />
     <EmbeddedResource Include="..\MapArbitraryDatabaseExample\Properties\Resources.resx" Link="Resources.resx" />
   </ItemGroup>
-
   <ItemGroup>
     <None Include="..\MapArbitraryDatabaseExample\nwind.sqlite" Link="nwind.sqlite">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
@@ -27,10 +23,8 @@
     <None Include="..\MapArbitraryDatabaseExample\packages.config" Link="packages.config" />
     <None Include="..\MapArbitraryDatabaseExample\Properties\Settings.settings" Link="Settings.settings" />
   </ItemGroup>
-
   <ItemGroup>
     <PackageReference Include="DevExpress.WindowsDesktop.Win" Version="20.1.3-ctp" />
     <PackageReference Include="System.Data.SQLite.Core" Version="1.0.112.2" />
   </ItemGroup>
-
 </Project>

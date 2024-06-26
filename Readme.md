@@ -2,6 +2,7 @@
 ![](https://img.shields.io/endpoint?url=https://codecentral.devexpress.com/api/v1/VersionRange/128585935/13.1.4%2B)
 [![](https://img.shields.io/badge/Open_in_DevExpress_Support_Center-FF7200?style=flat-square&logo=DevExpress&logoColor=white)](https://supportcenter.devexpress.com/ticket/details/E2922)
 [![](https://img.shields.io/badge/📖_How_to_use_DevExpress_Examples-e9f6fc?style=flat-square)](https://docs.devexpress.com/GeneralInformation/403183)
+[![](https://img.shields.io/badge/💬_Leave_Feedback-feecdd?style=flat-square)](#does-this-example-address-your-development-requirementsobjectives)
 <!-- default badges end -->
 <!-- default file list -->
 *Files to look at*:
@@ -114,3 +115,10 @@ gridControl1.DataSource = New XPCollection(session1, classInfo)
 [How to dynamically create a read-only calculated (persistent alias) property](https://github.com/DevExpress-Examples/how-to-dynamically-create-a-read-only-calculated-persistent-alias-property-e3473)   
 [How to create persistent classes mapped to tables with a composite primary key at runtime](https://github.com/DevExpress-Examples/how-to-create-persistent-classes-mapped-to-tables-with-a-composite-primary-key-at-runtime-e4606)   
 [eXpressApp Framework](https://docs.devexpress.com/eXpressAppFramework/112670/index) > [Concepts](https://docs.devexpress.com/eXpressAppFramework/112683/concepts) > [Business Model Design](https://docs.devexpress.com/eXpressAppFramework/113461/concepts/business-model-design) > [Types Info Subsystem](https://docs.devexpress.com/eXpressAppFramework/113669/concepts/business-model-design/types-info-subsystem) > [Customize Business Object's Metadata](https://docs.devexpress.com/eXpressAppFramework/113583/concepts/business-model-design/types-info-subsystem/customize-business-object's-metadata)
+<!-- feedback -->
+## Does this example address your development requirements/objectives?
+
+[<img src="https://www.devexpress.com/support/examples/i/yes-button.svg"/>](https://www.devexpress.com/support/examples/survey.xml?utm_source=github&utm_campaign=XPO_how-to-generate-persistent-metadata-for-an-arbitrary-data-table-e2922&~~~was_helpful=yes) [<img src="https://www.devexpress.com/support/examples/i/no-button.svg"/>](https://www.devexpress.com/support/examples/survey.xml?utm_source=github&utm_campaign=XPO_how-to-generate-persistent-metadata-for-an-arbitrary-data-table-e2922&~~~was_helpful=no)
+
+(you will be redirected to DevExpress.com to submit your response)
+<!-- feedback end -->
